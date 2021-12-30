@@ -1,45 +1,30 @@
-# _{Application name here}_
+# _Jonathan Delcid's Code Review 4_
 
-#### By _**{List of contributors}**_
+#### By _**Jonathan Delcid**_
 
-#### _{Brief description of application}_
-
-## Github Pages Link
-
-[TITLE HERE Github Pages](https://patrick-dolan.github.io/APPLICATIONNAMEHERE/)
 
 ## Technologies Used
 
 * _HTML_
-* _CSS & Bootstrap_
-* _Javascript & jQuery_
+* _CSS_ 
+* _Javascript_
+
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_In this project, I write an application that determines a user's age based on a planet's solar years._
+
+<p><a href="https://github.com/delcidj22/code-review-5">CLICK HERE</a> to look over this code review!</p>
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository to your desktop_
+* _Navigate to top of directory_
+* _Open code-review-5/index.html_
+* _Run Live Server_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
 
-## Contact Me
-
-_Let me know if you run into any issues or have questions, ideas or concerns:_
-_[Author Email Here]_
-
-## License
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _December 2021, Jonathan Delcid_
