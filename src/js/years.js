@@ -20,4 +20,30 @@ export default class Years {
     return age / 11.86
   }
 
+  solarAge() {
+    const mercury = this.mercuryAge(this.age);
+    const venus = this.venusAge(this.age);
+    const mars = this.marsAge(this.age);
+    const jupiter = this.jupiterAge(this.age);
+
+    return [mercury, venus, mars, jupiter];
+  }
+
+  solarExpectancy() {
+    let extraYears = this.lifeExpectancy - this.age;
+
+    let mercury = this.mercuryAge(extraYears);
+    let venus = this.venusAge(extraYears);
+    let marsAge = this.marsAge(extraYears);
+    let jupiter = this.jupiterAge(extraYears);
+    let planets = [mercury, venus, earth, mars, jupiter];
+    if(extraYears < 0){
+      for(let i=0; i <planets.length; i++){
+        planets[i] *= -1;
+      }
+    }
+    return planets;
+
+  }
+
 }
