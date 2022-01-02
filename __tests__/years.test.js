@@ -13,7 +13,7 @@ describe('Years', ()=> {
   });
 
   test('should create users age in mercury years', () => {
-    expect(year.mercuryAge(year.age)).toEqual(104.1667);
+    expect(year.mercuryAge(year.age)).toEqual(104.16666666666667);
   });
   
 });
