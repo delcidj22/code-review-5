@@ -4,6 +4,10 @@ export default class Years {
     this.lifeExpectancy = lifeExpectancy;
   }
 
+  earthAge(age) {
+    return age;
+  }
+
   mercuryAge(age) {
     return age / .24;
   }
@@ -21,22 +25,24 @@ export default class Years {
   }
 
   solarAge() {
+    const earth = this.earthAge(this.age);
     const mercury = this.mercuryAge(this.age);
     const venus = this.venusAge(this.age);
     const mars = this.marsAge(this.age);
     const jupiter = this.jupiterAge(this.age);
 
-    return [mercury, venus, mars, jupiter];
+    return [earth, mercury, venus, mars, jupiter];
   }
 
   solarExpectancy() {
     let extraYears = this.lifeExpectancy - this.age;
 
+    let earth = this.earthAge(extraYears);
     let mercury = this.mercuryAge(extraYears);
     let venus = this.venusAge(extraYears);
-    let marsAge = this.marsAge(extraYears);
+    let mars = this.marsAge(extraYears);
     let jupiter = this.jupiterAge(extraYears);
-    let planets = [mercury, venus, earth, mars, jupiter];
+    let planets = [earth, mercury, venus, mars, jupiter];
     if(extraYears < 0){
       for(let i=0; i <planets.length; i++){
         planets[i] *= -1;
