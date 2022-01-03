@@ -37,4 +37,8 @@ describe('Years', ()=> {
     expect(year.solarAge(year.age)).toEqual([25, 104.16666666666667, 40.32258064516129, 13.297872340425533, 2.1079258010118043]);
   });
   
+  test('should return an array of how many years the user has left to live on each planet', () => {
+    expect(year.solarExpectancy()).toEqual([65, 270.83333333333337, 104.83870967741936, 34.57446808510638, 5.480607082630692])
+  });
+
 });
