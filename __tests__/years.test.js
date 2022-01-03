@@ -32,5 +32,9 @@ describe('Years', ()=> {
   test('should create a users age in jupiter years', () => {
     expect(year.jupiterAge(year.age)).toEqual(2.1079258010118043);
   });
+
+  test('should create an array of the users age on each solar planet', () => {
+    expect(year.solarAge(year.age)).toEqual([25, 104.16666666666667, 40.32258064516129, 13.297872340425533, 2.1079258010118043]);
+  });
   
 });
