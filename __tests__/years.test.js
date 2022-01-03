@@ -38,7 +38,11 @@ describe('Years', ()=> {
   });
   
   test('should return an array of how many years the user has left to live on each planet', () => {
-    expect(year.solarExpectancy()).toEqual([65, 270.83333333333337, 104.83870967741936, 34.57446808510638, 5.480607082630692])
+    expect(year.solarExpectancy()).toEqual([65, 270.83333333333337, 104.83870967741936, 34.57446808510638, 5.480607082630692]);
   });
 
+  test('should return how many years user has passed life expectancy', () => {
+    const pastExpectancy = new Years(100,90)
+    expect(pastExpectancy.solarExpectancy()).toEqual([10, 41.66666666666667, 16.129032258064516, 5.319148936170213, 0.8431703204047218]);   
+  });
 });
