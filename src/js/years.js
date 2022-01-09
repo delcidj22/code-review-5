@@ -21,7 +21,7 @@ export default class Years {
   }
 
   jupiterAge(age) {
-    return age / 11.86
+    return age / 11.86;
   }
 
   solarAge() {
